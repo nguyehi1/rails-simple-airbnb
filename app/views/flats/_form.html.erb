@@ -1,0 +1,35 @@
+<div class="wrapper-body">
+  <h3>Create your new flat here</h3>
+
+  <%= simple_form_for @flat do |f| %>
+
+    <div class="form-group">
+      <%= f.label :name, "Title of your post" %><br>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :address, "Address" %><br>
+      <%= f.text_field :address, class: 'form-control' %>
+
+      <%= f.label :description, "Description" %><br>
+      <%= f.text_field :description, class: 'form-control' %>
+
+      <%= f.label :price_per_night, "What is the price per night?" %><br>
+      <%= f.text_field :price_per_night, class: 'form-control' %>
+
+      <%= f.label :number_of_guests, "How many guesses allowed?" %><br>
+      <%= f.text_field :number_of_guests, class: 'form-control' %>
+
+      <%= f.label :image, "Picture(s)" %><br>
+      <%= f.text_field :image, class: 'form-control' %>
+
+    </div>
+
+    <div class="form-group">
+      <%= f.submit "Submit a new flat", class: "btn btn-primary" %>
+    </div>
+
+  <% end %>
+
+  <%= link_to "<< Back to flats listing", flats_path %>
+
+</div>

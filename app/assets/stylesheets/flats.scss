@@ -1,0 +1,79 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex-grow: 1;
+}
+
+.navbar-custom {
+  background-color: rgb(243, 244, 242);
+  // padding: 0 10px;
+  color: rgb(145, 145, 145);
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-search {
+  color: rgb(70, 157, 44) !important;
+  border-color: rgb(70, 157, 44) !important;
+}
+
+.btn-add {
+  color: rgb(27, 144, 219);
+  border-color: rgb(27, 144, 219) !important;
+}
+.btn-add:hover {
+  background-color: rgb(27, 144, 219) !important;
+  color: white;
+}
+
+.btn-add:hover > a {
+  text-decoration: none;
+  color:white;
+}
+
+.wrapper-body {
+  padding: 30px;
+}
+.container {
+  display: flex;
+}
+@media(max-width: 800px) {
+  .container {
+    display: block;
+  }
+}
+
+// Footer stylesheet
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}

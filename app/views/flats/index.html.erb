@@ -1,0 +1,26 @@
+<div class="wrapper-body">
+  <div class="container">
+    <div class="row">
+      <% @flats.each do |flat| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-img">
+            <%= image_tag "#{flat.image}", class: 'img-responsive' %>
+          </div>
+
+          <div class="card-content">
+            <h4><%= link_to flat.name, flat_path(flat) %></h4>
+            <ul>
+              <li>Address: <%= flat.address %></li>
+              <li>Description: <%= flat.description %></li>
+              <li>Price per night: <%= flat.price_per_night %></li>
+              <li>Number of guests: <%= flat.number_of_guests %></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

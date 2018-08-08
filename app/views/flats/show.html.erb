@@ -1,0 +1,26 @@
+<div class="wrapper-body">
+  <%= link_to "<< Back to flats listing", flats_path %>
+  <br>
+  <h3><%= @flat.name %></h3>
+  <div class="card-img">
+    <%= image_tag "#{@flat.image}", class: 'img-responsive' %>
+  </div
+
+  <div class="flat-details">
+    <ul>
+      <li>Address: <%= @flat.address %></li>
+      <li>Description: <%= @flat.description %></li>
+      <li>Price per night: <%= @flat.price_per_night %></li>
+      <li>Number of guests: <%= @flat.number_of_guests %></li>
+    </ul>
+    <div class="flat-link">
+      <%= link_to "Edit", edit_flat_path %> |
+      <%= link_to "Delete", flat_path(@flat),
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } %>
+    </div>
+
+  </div>
+
+
+</div>
